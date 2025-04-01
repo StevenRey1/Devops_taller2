@@ -1,5 +1,5 @@
 import unittest
-from functions import load_file
+import funtions as f
 
 class TestFunctions(unittest.TestCase):
 
@@ -12,7 +12,7 @@ class TestFunctions(unittest.TestCase):
             f.write("id;name;gender;eye_color;race;hair_color;height;publisher;skin_color;alignment;weight\n")
             f.write("1;Superman;Male;Blue;Kryptonian;Black;191;DC Comics;None;Good;101\n")
         
-        heroes = load_file(test_data)
+        heroes = f.load_file(test_data)
         
         # Verificar que se haya cargado correctamente
         self.assertIn("1", heroes)
