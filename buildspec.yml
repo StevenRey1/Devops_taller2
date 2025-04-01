@@ -3,7 +3,10 @@ version: 0.2
 phases:
   pre_build:
     commands:
+      - echo "Iniciando la fase de pre_build..."
       - pip install -r requirements.txt
+      - echo "Instalación de dependencias completada."
+
 artifacts:
   files:
     - '**/*'
