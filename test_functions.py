@@ -1,5 +1,6 @@
 import unittest
-import funtions as f
+import functions as f
+
 
 class TestFunctions(unittest.TestCase):
 
